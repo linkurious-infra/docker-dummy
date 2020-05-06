@@ -3,4 +3,10 @@ node ("docker-agent-jnlp") {
   {
     echo 'Hello World'
   }
+
+  stage('Prepare') {
+
+    // Get repository
+    checkout scm
+  }
 }
