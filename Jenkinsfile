@@ -9,4 +9,9 @@ node ("docker-agent-jnlp") {
     // Get repository
     checkout scm
   }
+  stage('Sleep') {
+
+    // Get repository
+    sleep(60)
+  }
 }
