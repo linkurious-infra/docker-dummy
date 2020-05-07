@@ -9,6 +9,9 @@ node ("docker-agent-jnlp") {
     // Get repository
     checkout scm
   }
+  stage('Build') {
+    built_image = docker.build("${JOB_NAME}:${BUILD_NUMBER}")
+  }
   stage('Sleep') {
 
     // Get repository
