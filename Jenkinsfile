@@ -3,4 +3,5 @@
 dockerJob {
   // General
   projectName = "linkurious-infra/docker-dummy"
+
 }
