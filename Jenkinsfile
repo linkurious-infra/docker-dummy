@@ -1,20 +1,6 @@
-node ("docker-agent-jnlp") {
-  stage('Hello')
-  {
-    echo 'Hello World'
-  }
+@Library('linkurious-shared')_
 
-  stage('Prepare') {
-
-    // Get repository
-    checkout scm
-  }
-  stage('Build') {
-    built_image = docker.build("${JOB_NAME}:${BUILD_NUMBER}")
-  }
-  stage('Sleep') {
-
-    // Get repository
-    sleep(60)
-  }
+dockerJob {
+  // General
+  projectName = "linkurious-infra/docker-dummy"
 }
