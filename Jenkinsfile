@@ -1,4 +1,4 @@
-@Library('linkurious-shared@feature/test-properties')_
+@Library('linkurious-shared')_
 
 
 dockerJob {
