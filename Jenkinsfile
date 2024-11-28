@@ -1,4 +1,4 @@
-@Library('linkurious-shared@feature')_
+@Library('linkurious-shared')_
 
 
 dockerJob {
