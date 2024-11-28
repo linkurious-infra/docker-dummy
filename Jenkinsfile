@@ -1,4 +1,4 @@
-@Library('linkurious-shared@feature/JSL-147')_
+@Library('linkurious-shared@feature')_
 
 
 dockerJob {
